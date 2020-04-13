@@ -6,13 +6,16 @@
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
 </head>
 <body>
 <style>
     header {
-        padding : 30px 0;
+        padding: 30px 0;
     }
 
     .title {
@@ -23,64 +26,481 @@
     }
 
     .header-section {
+        display: flex;
+        align-items: center;
         padding: 20px;
-        border-top : solid 2px;
-        border-bottom : solid 2px;
+        border-top: solid 2px;
+        border-bottom: solid 2px;
         margin-bottom: 15px;
         font-size: 20px;
     }
 
+    .header-icon-wrapper {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
     .border-main {
-        border-color : #00ddff;
+        border-color: #35ceab;
     }
 
     .main {
-        color : #00ddff;
+        color: #35ceab;
+    }
+
+    .bg-main {
+        background-color: #35ceab !important;
+        color : white;
     }
 
     .secondary {
-        color : #817d81;
+        color: #817d81;
     }
+
+    .quick-info-icon {
+        margin-right: 20px;
+    }
+
+    .body-section {
+        margin-bottom :50px;
+    }
+
+    /* EXPERIENCE */
+
+    .experience-section {
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+    }
+
+    .experience-section .period-section {
+        width: 20%;
+        text-align: end;
+        padding-right: 50px;
+    }
+
+    .experience-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 14px;
+    }
+
+    .experience-body {
+        width: 80%;
+    }
+
+    /*  engagements */
+
+    .engagement-section {
+        display: flex;
+        flex-direction: row;
+        margin: 15px 0;
+        font-size: 0.7rem;
+    }
+
+    .engagement-section .period-section {
+        width: 25%;
+        text-align: end;
+        padding-right: 25px;
+    }
+
+    .engagement-body {
+        width: 75%;
+    }
+
+    .engagement-title {
+        font-weight: bold;
+    }
+
+    /* COMPETENCE*/
+    .competence-section {
+        font-size: 0.8rem;
+    }
+
+
+    /* INTEREST */
+
+    .interest-section {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+    }
+
+    .interest-badge-wrapper {
+        width: 20%
+    }
+
+    .interest-badge {
+        display: flex;
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        border: solid 2px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
 </style>
-    <div class="container-fluid">
-        <header class="row">
-            <div class="col-6 title">
-                <h1 class="name">
-                    <span class="first-name">Megan</span>
-                    <span class="last-name main">MOORE</span>
-                </h1>
-                <div class="profession secondary">Project Manager</div>
+<div class="container-fluid">
+    <header class="row">
+        <div class="col-6 title">
+            <h1 class="name">
+                <span class="first-name">Megan</span>
+                <span class="last-name main">MOORE</span>
+            </h1>
+            <div class="profession secondary">Chargé de Projet</div>
+        </div>
+        <div class="col-6">
+            <ul class="quick-info list-group list-group-flush">
+                <li class="list-group-item">
+                    <i class="fas fa-mobile-alt quick-info-icon main fa-lg"></i>(581) 999-3260
+                </li>
+                <li class="list-group-item">
+                    <i class="far fa-envelope quick-info-icon main fa-lg"></i>megan.x.moore@gmail.com
+                </li>
+                <li class="list-group-item">
+                    <i class="fab fa-linkedin quick-info-icon main fa-lg"></i>www.linkedin.com/in/megan-moore-627a1a114
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="row">
+            <div class="col-12">
+                <div class="header-section border-main">
+                    <div class="header-icon-wrapper main">
+                        <i class="fas fa-bullseye fa-2x"></i>
+                    </div>
+                    OBJECTIF
+                </div>
+                <div class="body-section">
+                    <p>
+                        Ingénieure bilingue ayant une expérience dans la gestion de projets pharmaceutiques et la
+                        gestion d'équipes.
+                    </p>
+                    <p>
+                        En quête de bonnes pratiques et d'amélioration, toujours prête à relever de nouveaux défis
+                        permettant d'évoluer dans un environnement positif et à la fine pointe de la technologie.
+                    </p>
+                    <p>
+                        J'aimerais diversifier mes compétences et partager mes connaissances avec de nouvelles
+                        personnes.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="header-section border-main">
+                    <div class="header-icon-wrapper main">
+                        <i class="fas fa-suitcase fa-2x"></i>
+                    </div>
+                    EXPÉRIENCE PROFESSIONNELLE
+                </div>
+                <div class="body-section">
+                    <div class="experience-section">
+                        <div class="period-section">
+                            Depuis Mai 2017
+                        </div>
+                        <div class="experience-body">
+                            <div class="experience-title">
+                                Chargé de Projet – Sérialisation / Automatisation - (Track & Trace) - Optel Group
+                            </div>
+                            <div class="experience-description">
+                                <ul>
+                                    <li>
+                                        Communiquer les objectifs, le calendrier, le budget et les obstacles du projet
+                                        aux équipes , aux clients, aux OEM et aux autres parties prenantes internes et
+                                        externes, selon les besoins.
+                                    </li>
+                                    <li>
+                                        Assurer la résolution des problèmes et recommander des solutions.
+                                    </li>
+                                    <li>
+                                        Participer à des réunions régulières de révision des projets pour s'assurer que
+                                        les tâches/phases/points de passage sont réalisés de manière efficace et en
+                                        temps voulu.
+                                    </li>
+                                    <li>
+                                        Diriger et soutenir les initiatives d'amélioration continue (du processus de
+                                        prestation)
+                                    </li>
+                                    <li>
+                                        Respecter et comprendre toutes les politiques, procédures et processus de
+                                        l'entreprise, ainsi que les réglementations et les meilleures pratiques du
+                                        secteur.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="experience-skills-list">
+                                <span class="badge badge-pill bg-main">Dispositif médical</span>
+                                <span class="badge badge-pill bg-main">Gestion des risques</span>
+                                <span class="badge badge-pill bg-main">Gestion du temps et des échéanciers</span>
+                                <span class="badge badge-pill bg-main">Gestion des réunions</span>
+                                <span class="badge badge-pill bg-main">Gestion de la chaîne d'approvisionnement</span>
+                                <span class="badge badge-pill bg-main">Sprint</span>
+                                <span class="badge badge-pill bg-main">Scrum</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience-section">
+                        <div class="period-section">
+                            Mai 2016 - Août 2016
+                        </div>
+                        <div class="experience-body">
+                            <div class="experience-title">
+                                Stagiaire en Validation - Ropack Pharma Solutions
+                            </div>
+                            <div class="experience-description">
+                                <ul>
+                                    <li>
+                                        Définir et exécuter les protocoles de validation et d'ingénierie
+                                    </li>
+                                    <li>Effectuer la qualification des équipements</li>
+                                    <li>Effectuer des tests de validation et d'ingénierie conformément à l'inspection de
+                                        la limite de qualité d'acceptation (AQL)
+                                    </li>
+                                    <li>Définir et exécuter le formulaire de contrôle des modifications (FCC)</li>
+                                    <li>Formation aux BPF</li>
+                                </ul>
+                            </div>
+                            <div class="experience-skills-list">
+                                <span class="badge badge-pill bg-main">Industrie pharmaceutique</span>
+                                <span class="badge badge-pill bg-main">Hygiène industrielle</span>
+                                <span class="badge badge-pill bg-main">Contrôle de la qualité</span>
+                                <span class="badge badge-pill bg-main">Bonne Pratique de Fabrication</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-section">
+                        <div class="period-section">
+                            Janvier 2015 - Septembre 2015
+                        </div>
+                        <div class="experience-body">
+                            <div class="experience-title">
+                                Stagiaire Ressource de Production - Pepsico
+                            </div>
+                            <div class="experience-description">
+                                <ul>
+                                    <li>
+                                        Surveillance des procédés et du traitement des eaux
+                                    </li>
+                                    <li>Coordination des différentes équipes de travail (production, assainissement et
+                                        qualité)
+                                    </li>
+                                    <li>Faire preuve de discernement et gérer les situations d'urgence</li>
+                                    <li>Trouver des solutions et des alternatives aux problèmes (pannes mécaniques,
+                                        retards de production, retards de personnel)
+                                    </li>
+                                    <li>Participation active à la formation des employés en matière de sécurité</li>
+                                    <li>Optimisation de la production en vue d'accroître la rentabilité</li>
+                                    <li>Garantir la qualité des produits</li>
+                                    <li>Gestion des accidents</li>
+                                    <li>Préparer des rapports techniques</li>
+
+
+                                </ul>
+                            </div>
+                            <div class="experience-skills-list">
+                                <span class="badge badge-pill bg-main">Industrie alimentaire</span>
+                                <span class="badge badge-pill bg-main">Opérations de la chaîne d'approvisionnement</span>
+                                <span class="badge badge-pill bg-main">Sécurité industrielle</span>
+                                <span class="badge badge-pill bg-main">Gestion des processus</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="header-section border-main">
+                    <div class="header-icon-wrapper main">
+                        <i class="fas fa-handshake fa-2x"></i>
+                    </div>
+                    ENGAGEMENTS
+                </div>
+                <div class="body-section">
+                    <div class="engagement-section">
+                        <div class="period-section">
+                            2013-2017
+                        </div>
+                        <div class="engagement-body">
+                            <div class="engagement-title">
+                                Membre de l'organisation/Cérémonie d'engagement des ingénieurs
+                            </div>
+                        </div>
+                    </div>
+                    <div class="engagement-section">
+                        <div class="period-section">
+                            2014
+                        </div>
+                        <div class="engagement-body">
+                            <div class="engagement-title">
+                                Membre du comité d'initiation des étudiants en génie chimique
+                            </div>
+                        </div>
+                    </div>
+                    <div class="engagement-section">
+                        <div class="period-section">
+                            2014
+                        </div>
+                        <div class="engagement-body">
+                            <div class="engagement-title">
+                                Membre de l'organisation du Congrès de génie chimique
+                            </div>
+                        </div>
+                    </div>
+                    <div class="engagement-section">
+                        <div class="period-section">
+                            2013
+                        </div>
+                        <div class="engagement-body">
+                            <div class="engagement-title">
+                                Membre de l'organisation de la course La galipote
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-6">
-                <ul class="quick-info list-group list-group-flush">
-                    <li class="list-group-item">(418) 956-5474</li>
-                    <li class="list-group-item">david.sauve.1992@gmail.com</li>
-                    <li class="list-group-item">www.linkedin.com/in/david-sauvé-72b681173</li>
-                </ul>
-            </div>
-        </header>
-        <main>
-            <div class="row">
-                <div class="col-12">
-                    <div class="header-section border-main">
-                        OBJECTIF
+                <div class="header-section border-main">
+                    <div class="header-icon-wrapper main">
+                        <i class="fas fa-graduation-cap fa-2x"></i>
                     </div>
-                    <div class="body-section">
-
+                    FORMATIONS
+                </div>
+                <div class="body-section">
+                    <div class="engagement-section">
+                        <div class="period-section">
+                            Octobre 2019
+                        </div>
+                        <div class="engagement-body">
+                            <div class="engagement-title">
+                                Membre de l'Ordre des Ingénieurs
+                            </div>
+                        </div>
+                    </div>
+                    <div class="engagement-section">
+                        <div class="period-section">
+                            2018
+                        </div>
+                        <div class="engagement-body">
+                            <div class="engagement-title">
+                                Formation White Belt/Lean Sigma Six
+                            </div>
+                        </div>
+                    </div>
+                    <div class="engagement-section">
+                        <div class="period-section">
+                            2014
+                        </div>
+                        <div class="engagement-body">
+                            <div class="engagement-title">
+                                Formation SIMDUT
+                            </div>
+                        </div>
+                    </div>
+                    <div class="engagement-section">
+                        <div class="period-section">
+                            2013-2017
+                        </div>
+                        <div class="engagement-body">
+                            <div class="engagement-title">
+                                Programme de Baccalauréat en Génie Chimique / Université Laval
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="header-section border-main">
-                        EXPERIENCE PROFESSIONNELLE
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="header-section border-main">
+                    <div class="header-icon-wrapper main">
+                        <i class="fas fa-lightbulb fa-2x"></i>
                     </div>
-                    <div class="body-section">
+                    COMPÉTENCES
+                </div>
+                <div class="body-section competence-section">
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Anglais</li>
+                                <li class="list-group-item">Excel</li>
+                                <li class="list-group-item">Leadership</li>
+                                <li class="list-group-item">Communication</li>
+                                <li class="list-group-item">Pensée critique</li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Coaching</li>
+                                <li class="list-group-item">Formation d'équipes</li>
+                                <li class="list-group-item">L'esprit d'équipe</li>
+                                <li class="list-group-item">Le sens de l'humour</li>
+                            </ul>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="header-section border-main">
+                    <div class="header-icon-wrapper main">
+                        <i class="fas fa-heart fa-2x"></i>
+                    </div>
+                    INTÉRÊTS
+                </div>
+                <div class="body-section interest-section">
+                    <div class="interest-badge-wrapper">
+                        <span class="interest-badge main border-main">
+                            <i class="fas fa-mountain fa-2x"></i>
+                        </span>
+                    </div>
+                    <div class="interest-badge-wrapper">
+                        <span class="interest-badge main border-main">
+                            <i class="fas fa-plane-departure fa-2x"></i>
+                        </span>
+                    </div>
+                    <div class="interest-badge-wrapper">
+                        <span class="interest-badge main border-main">
+                            <i class="fas fa-dog fa-2x"></i>
+                        </span>
+                    </div>
+                    <div class="interest-badge-wrapper">
+                        <span class="interest-badge main border-main">
+                            <i class="fas fa-hiking fa-2x"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="body-section interest-section">
+                    <div class="interest-badge-wrapper">
+                        <span class="interest-badge main border-main">
+                            <i class="fas fa-book-open fa-2x"></i>
+                        </span>
+                    </div>
+                    <div class="interest-badge-wrapper">
+                        <span class="interest-badge main border-main">
+                            <i class="fas fa-dumbbell fa-2x"></i>
+                        </span>
+                    </div>
+                    <div class="interest-badge-wrapper">
+                       <span class="interest-badge main border-main">
+                            <i class="fas fa-campground fa-2x"></i>
+                        </span>
+                    </div>
+                    <div class="interest-badge-wrapper">
+                        <span class="interest-badge main border-main">
+                            <i class="fas fa-biking fa-2x"></i>
+                        </span>
                     </div>
                 </div>
             </div>
-        </main>
-    </div>
+        </div>
+    </main>
+</div>
 </body>
 </html>
